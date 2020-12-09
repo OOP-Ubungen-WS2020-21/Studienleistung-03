@@ -35,12 +35,12 @@ Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe fi
 
 ## ArtilleryGame
 
-Im Rahmen dieser Aufgabe entwickeln wir ein Spiel aus dem Genre der ![Artillery Games](https://en.wikipedia.org/wiki/Artillery_game). 
-![Tank Wars](https://dosgames.com/game/tank-wars/) ist ein Beispiel für ein solches Spiel.
+Im Rahmen dieser Aufgabe entwickeln wir ein Spiel aus dem Genre der [Artillery Games](https://en.wikipedia.org/wiki/Artillery_game). 
+[Tank Wars](https://dosgames.com/game/tank-wars/) ist ein Beispiel für ein solches Spiel.
 Unser ArtilleryGame bleibt dieser Formel treu und ist demnach auch ein 2-Spieler, rundenbasiertes Strategiespiel.
 
 ![ArtilleryGame](docs/artillerygame.png){ width=50% }
-Auf GRIPS finden sie zusätzlich ein kleines ![Demo-Video](https://elearning.uni-regensburg.de/mod/resource/view.php?id=1596083), das den allgmeinen Spielablauf zeigt.
+Auf GRIPS finden sie zusätzlich ein kleines [Demo-Video](https://elearning.uni-regensburg.de/mod/resource/view.php?id=1596083), das den allgmeinen Spielablauf zeigt.
 
 ### Beschreibung
 Auf der jeweils linken und rechten Seite des Spielfeldes befinden sich zwei Kanonen, stellvertretend für Spieler:in 1 (linke Kanone) und Spieler:in 2 (rechte Kanone).
