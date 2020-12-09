@@ -83,8 +83,8 @@ private Point calculateShotDirection() {
     Point barrelPosition 
     	= new Point(<x-Koordinate der Kanonenmündung>, <y-Koordinate der Kanonenmündung>);
     
-    Point crosshairPosition 
-    	= new Point(<x-Koordinate des Mittelpunkts des Fadenkreuzes>,<y-Koordinate des Mittelpunkts des Fadenkreuzes>);
+    Point crosshairPosition = new Point(<x-Koordinate des Mittelpunkts des Fadenkreuzes>,
+    	<y-Koordinate des Mittelpunkts des Fadenkreuzes>);
     
     float directionX = crosshairPosition.getXPos() - barrelPosition.getXPos();
     float directionY = crosshairPosition.getYPos() - barrelPosition.getYPos();
