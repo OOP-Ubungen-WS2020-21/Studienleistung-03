@@ -63,13 +63,13 @@ Alle benötigten Assets finden Sie im Ordner `data/assets` innerhalb des Starter
 
 ### Weitere Screenshots
 
-![Zerstörung von Terrain durch Kanonenkugelexplosion](docs/destructibleTerrain.png) { witdth=25% }
+![Zerstörung von Terrain durch Kanonenkugelexplosion](docs/destructibleTerrain.png){ width=50% }
 
-![Treffer einer Kanone mit Verlust eines Herzens](docs/healthLoss.png){ width=25% }
+![Treffer einer Kanone mit Verlust eines Herzens](docs/healthLoss.png){ width=50% }
 
-![Treffer einer Kanone mit Verlust eines Herzens](docs/healthLoss.png){ width=25% }
+![Treffer einer Kanone mit Verlust eines Herzens](docs/healthLoss.png){ width=50% }
 
-![Game Over Screen](docs/gameOver.png){ width=25% }
+![Game Over Screen](docs/gameOver.png){ width=50% }
 
 ### Anforderungen
 * Die Klasse `ArtilleryGame` muss als Einstiegspunkt für Ihr ArtilleryGame verwendet werden
