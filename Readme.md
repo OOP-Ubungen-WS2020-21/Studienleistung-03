@@ -45,7 +45,7 @@ Auf GRIPS finden sie zusätzlich ein kleines [Demo-Video](https://elearning.uni-
 
 ### Beschreibung
 Auf der jeweils linken und rechten Seite des Spielfeldes befinden sich zwei Kanonen, stellvertretend für Spieler:in 1 (linke Kanone) und Spieler:in 2 (rechte Kanone).
-Wessen Zug es gerade ist, wird durch den weißen Pfeil über der entprechenden Kanonene angezeigt.
+Wessen Zug es gerade ist, wird durch den weißen Pfeil über der entprechenden Kanone angezeigt.
 Die beiden Kanonen sind anhand von Terrain von einander getrennt.
 Diese Terrain kann durch explodierende Kanonenkugeln zerstört werden.
 Spieler:innen benutzen Tastatur und Maus, um ihre Kanone zu bewegen (Tastatur, A für Linksbewegung, D für Rechtsbewegung), mit einem Fadenkreuz zu zielen (Maus) und einen Schuss abzugeben (Maus, linke Maustaste).
