@@ -52,7 +52,7 @@ Spieler:innen benutzen Tastatur und Maus, um ihre Kanone zu bewegen (Tastatur, A
 Spieler:innen haben genau einen Schuss pro Runde.
 Dieser Schuss beendet den Zug und die andere Person ist dran mit ihrem Zug.
 Die abgefeuerte Kanonenkugel wird von Gravitation und Wind beeinflusst.
-Wind kommt in unterschiedlichen Facetten vor - kein Wind, Windstärke 1, 2, 3 und 4.
+Wind kommt per Zufall in unterschiedlichen Facetten vor - kein Wind, Windstärke 1, 2, 3 und 4 und weht zufällig entweder von links nach rechts oder rechts nach lins.
 In den oberen Ecken oberhalb der Kanonen ist deren Gesundheitsanzeige in Form von drei roten Herzen.
 Wird eine Kanone von einer Kanonenkugel getroffen, färbt sich das rechteste rote Herz grau.
 Sind alle Herzen grau bzw. wird eine Kanone dreimal getroffen, gewinnt die Person, die den Schuss abgegeben hat, das Spiel.
