@@ -61,6 +61,16 @@ Das Spiel startet neu, wenn man in diesem Game-Over-Screen die linke Maustaste d
 Das Spiel beinhaltet eine sich wiederholende Hintergrundmusik und Sounds, die abgespielt werden sollen, wenn eine Kanone abgefeuert wird und eine Kanonenkugel etwas trifft (z.B. Kartenrand, Kanone, Terrain).
 Alle benötigten Assets finden Sie im Ordner `data/assets` innerhalb des Starterpakets.
 
+### Weitere Screenshots
+
+![Zerstörung von Terrain durch Kanonenkugelexplosion](docs/destructibleTerrain.png) { witdth=50% }
+
+![Treffer einer Kanone mit Verlust eines Herzens](docs/healthLoss.png){ width=50% }
+
+![Treffer einer Kanone mit Verlust eines Herzens](docs/healthLoss.png){ width=50% }
+
+![Game Over Screen](docs/gameOver.png){ width=50% }
+
 ### Anforderungen
 * Die Klasse `ArtilleryGame` muss als Einstiegspunkt für Ihr ArtilleryGame verwendet werden
 * Teilen Sie Ihre Anwendung in sinnvolle Komponenten ein und legen Sie entsprechende Klassen dafür an
