@@ -1,6 +1,6 @@
 ---
 title: Studienleistung 3
-author: Zuletzt bearbeitet von Alexander Bazo
+author: Zuletzt bearbeitet von Jürgen Hahn
 documentclass: scrartcl
 classoption:
   - a4paper
@@ -40,23 +40,26 @@ Im Rahmen dieser Aufgabe entwickeln wir ein Spiel aus dem Genre der [Artillery G
 Unser ArtilleryGame bleibt dieser Formel treu und ist demnach auch ein 2-Spieler, rundenbasiertes Strategiespiel.
 
 ![ArtilleryGame](docs/artillerygame.png){ width=50% }
+
 Auf GRIPS finden sie zusätzlich ein kleines [Demo-Video](https://elearning.uni-regensburg.de/mod/resource/view.php?id=1596083), das den allgmeinen Spielablauf zeigt.
 
 ### Beschreibung
 Auf der jeweils linken und rechten Seite des Spielfeldes befinden sich zwei Kanonen, stellvertretend für Spieler:in 1 (linke Kanone) und Spieler:in 2 (rechte Kanone).
 Wessen Zug es gerade ist, wird durch den weißen Pfeil über der entprechenden Kanonene angezeigt.
 Die beiden Kanonen sind anhand von Terrain von einander getrennt.
-Diese Terrain ist zerstörbar.
-Spieler:innen benutzen Tastatur und Maus, um ihre Kanone zu bewegen (Tastatur), mit einem Fadenkreuz zu zielen (Maus) und einen Schuss abzugeben (Maus, linke Maustaste).
+Diese Terrain kann durch explodierende Kanonenkugeln zerstört werden.
+Spieler:innen benutzen Tastatur und Maus, um ihre Kanone zu bewegen (Tastatur, A für Linksbewegung, D für Rechtsbewegung), mit einem Fadenkreuz zu zielen (Maus) und einen Schuss abzugeben (Maus, linke Maustaste).
 Spieler:innen haben genau einen Schuss pro Runde.
 Dieser Schuss beendet den Zug und die andere Person ist dran mit ihrem Zug.
 Die abgefeuerte Kanonenkugel wird von Gravitation und Wind beeinflusst.
 Wind kommt in unterschiedlichen Facetten vor - kein Wind, Windstärke 1, 2, 3 und 4.
-Wird eine Kanone dreimal getroffen, gewinnt die Person, die den Schuss abgegeben hat, das Spiel.
+In den oberen Ecken oberhalb der Kanonen ist deren Gesundheitsanzeige in Form von drei roten Herzen.
+Wird eine Kanone von einer Kanonenkugel getroffen, färbt sich das rechteste rote Herz grau.
+Sind alle Herzen grau bzw. wird eine Kanone dreimal getroffen, gewinnt die Person, die den Schuss abgegeben hat, das Spiel.
 Dies wird den Spieler:innen anhand eines Game-Over-Sreens angezeigt.
 Das Spiel startet neu, wenn man in diesem Game-Over-Screen die linke Maustaste drückt.
 Das Spiel beinhaltet eine sich wiederholende Hintergrundmusik und Sounds, die abgespielt werden sollen, wenn eine Kanone abgefeuert wird und eine Kanonenkugel etwas trifft (z.B. Kartenrand, Kanone, Terrain).
-Alle benötigten assets liegen im Ordner `data/assets`.
+Alle benötigten Assets finden Sie im Ordner `data/assets` innerhalb des Starterpakets.
 
 ### Anforderungen
 * Die Klasse `ArtilleryGame` muss als Einstiegspunkt für Ihr ArtilleryGame verwendet werden
@@ -64,11 +67,11 @@ Alle benötigten assets liegen im Ordner `data/assets`.
 * Trennen Sie die Daten von Objekten (z.B. Kanonen) von deren Darstellung
 * Teilen Sie das ArtilleryGame in konkrete Teilaspekte ein, z.B.:
   * Szenen (Spiel, Game Over)
-  * Spielobjekte (Actors, z.B. Kanonen, Terrain)
+  * Spielobjekte ([Actorprinzip](https://gamedev.stackexchange.com/questions/151169/what-is-an-actor-in-game-development#:~:text=A%20game%20actor%20is%20an,might%20even%20be%20an%20actor.), z.B. Kanonen, Terrain)
 * Zerlegen Sie das Spiel in konkrete Phasen und Phasenübergänge.
+* Implementieren Sie die notwendigen Kollisionsabfragen
 * Verwenden Sie sinnvolle Datenstrukturen (z.B. `ArrayList`)
 * Praktizieren Sie `Decomposition`
-
 
 ### Hinweise
 
@@ -107,10 +110,19 @@ private Point calculateShotDirection() {
 
 ```
 
+#### Integration von Sound, Maus und Keyboard
+* Verwenden Sie die Klasse [`AudioClip`](https://oop-regensburg.github.io/GraphicsApp-Reborn-Library/html/classde_1_1ur_1_1mi_1_1oop_1_1audio_1_1_audio_clip.html), um Sounds in ihr Spiel zu integrieren
+* Überschreiben Sie die Methoden (`@Override`):
+  * `public void onMousePressed(MousePressedEvent event);`, um Klickevents der linken Maustaste abzufangen
+  * `public void onMouseMoved(MouseMovedEvent event);`, um die Position des Mauscursors zu erhalten und das Fadenkreuz korrekt zu platzieren
+  * `public void onKeyPressed(KeyPressedEvent event);`, um 
+  
+#### Kollisionsabfragen
+* Objekte der Klasse [`GrahpicsObject`](https://oop-regensburg.github.io/GraphicsApp-Reborn-Library/html/classde_1_1ur_1_1mi_1_1oop_1_1graphics_1_1_graphics_object.html), z.B. `Image`, `Rectangle` oder `Circle` erben von `GraphicsObject`, haben die Methode `public boolean hitTest(float x, float y);` ([Dokumentation](https://oop-regensburg.github.io/GraphicsApp-Reborn-Library/html/classde_1_1ur_1_1mi_1_1oop_1_1graphics_1_1_graphics_object.html#aa058c4daea042244726ae347972511ae))
+* Benutzen Sie diese Methode, um Kollisionsabfragen der einzelnen Spielobjekte (Actors) zu implementieren
 
 ### Mögliche Erweiterungen
-
-
-
-
+* Hübschere Darstellung der Windrichtung und -stärke
+* Verschiedene Munitionstypen (schwerer, aber größere Explosion, etc.) 
+* Hauptmenü
 
