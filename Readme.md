@@ -67,8 +67,6 @@ Alle benötigten Assets finden Sie im Ordner `data/assets` innerhalb des Starter
 
 ![Treffer einer Kanone mit Verlust eines Herzens](docs/healthLoss.png){ width=50% }
 
-![Treffer einer Kanone mit Verlust eines Herzens](docs/healthLoss.png){ width=50% }
-
 ![Game Over Screen](docs/gameOver.png){ width=50% }
 
 ### Anforderungen
