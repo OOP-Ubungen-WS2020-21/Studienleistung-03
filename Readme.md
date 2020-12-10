@@ -80,6 +80,7 @@ Alle benötigten Assets finden Sie im Ordner `data/assets` innerhalb des Starter
   * Spielobjekte ([Actorprinzip](https://gamedev.stackexchange.com/questions/151169/what-is-an-actor-in-game-development#:~:text=A%20game%20actor%20is%20an,might%20even%20be%20an%20actor.), z.B. Kanonen, Terrain)
 * Zerlegen Sie das Spiel in konkrete Phasen und Phasenübergänge.
 * Implementieren Sie die notwendigen Kollisionsabfragen
+* Das Bild für die Explosion einer Kanonenkugel soll eine Sekunde angezeigt werden, ehe es wieder verschwindet
 * Verwenden Sie sinnvolle Datenstrukturen (z.B. `ArrayList`)
 * Praktizieren Sie `Decomposition`
 
@@ -130,6 +131,10 @@ private Point calculateShotDirection() {
 #### Kollisionsabfragen
 * Objekte der Klasse [`GrahpicsObject`](https://oop-regensburg.github.io/GraphicsApp-Reborn-Library/html/classde_1_1ur_1_1mi_1_1oop_1_1graphics_1_1_graphics_object.html), z.B. `Image`, `Rectangle` oder `Circle` erben von `GraphicsObject`, haben die Methode `public boolean hitTest(float x, float y);` ([Dokumentation](https://oop-regensburg.github.io/GraphicsApp-Reborn-Library/html/classde_1_1ur_1_1mi_1_1oop_1_1graphics_1_1_graphics_object.html#aa058c4daea042244726ae347972511ae))
 * Benutzen Sie diese Methode, um Kollisionsabfragen der einzelnen Spielobjekte (Actors) zu implementieren
+
+#### Animieren der Explosion der Kanonenkugel
+* Setzen Sie die Bildwiederholungsrate (frame rate; meistens in Frames per Second (FPS) angegeben) Ihres Spiel auf einen festen Wert (z.B. 60)
+* Anhand von Variablen kann man speichern, ob und wie lange noch die Explosion gezeichnet werden soll, ehe sie nicht mehr gezeichnet werden soll und verschwindet
 
 ### Mögliche Erweiterungen
 * Hübschere Darstellung der Windrichtung und -stärke
