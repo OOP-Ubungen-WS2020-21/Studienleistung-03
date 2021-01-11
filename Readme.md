@@ -108,8 +108,8 @@ private Point calculateShotDirection() {
 
     double directionVectorLength = sqrt(directionXSquared + directionYSquared);
     
-    float normalizedDirectionX = v.getXPos() / directionVectorLength;
-    float normalizedDirectionY = v.getYPos() / directionVectorLength;
+    float normalizedDirectionX = directionVector.getXPos() / directionVectorLength;
+    float normalizedDirectionY = directionVector.getYPos() / directionVectorLength;
     
     Point normalizedDirectionVector 
     	= new Point(normalizedDirectionX, normalizedDirectionY);
@@ -124,7 +124,7 @@ private Point calculateShotDirection() {
 * Überschreiben Sie die Methoden (`@Override`):
   * `public void onMousePressed(MousePressedEvent event);`, um Klickevents der linken Maustaste abzufangen
   * `public void onMouseMoved(MouseMovedEvent event);`, um die Position des Mauscursors zu erhalten und das Fadenkreuz korrekt zu platzieren
-  * `public void onKeyPressed(KeyPressedEvent event);`, um 
+  * `public void onKeyPressed(KeyPressedEvent event);`, um die Eingabe durch die Tastatur abzufangen und die Kanonen in die entsprechende Richtung zu bewegen
   
 #### Kollisionsabfragen
 * Objekte der Klasse [`GrahpicsObject`](https://oop-regensburg.github.io/GraphicsApp-Reborn-Library/html/classde_1_1ur_1_1mi_1_1oop_1_1graphics_1_1_graphics_object.html), z.B. `Image`, `Rectangle` oder `Circle` erben von `GraphicsObject`, haben die Methode `public boolean hitTest(float x, float y);` ([Dokumentation](https://oop-regensburg.github.io/GraphicsApp-Reborn-Library/html/classde_1_1ur_1_1mi_1_1oop_1_1graphics_1_1_graphics_object.html#aa058c4daea042244726ae347972511ae))
